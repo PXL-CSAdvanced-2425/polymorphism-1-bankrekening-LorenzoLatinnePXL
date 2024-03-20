@@ -45,8 +45,8 @@ beschrijving](./media/image2.png)
 
 -   De klasse ***Bankrekening*** bevat de volgende methoden:
 
-    -   Constructor *Bankrekening*([double opening, string name, string
-        address]).
+    -   Constructor *Bankrekening*(double opening, string name, string
+        address).
 
     -   *BerekenRente()* dat het over te erven method omschrijft.
 
