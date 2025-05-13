@@ -17,7 +17,7 @@ namespace Bankrekening
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Zichtrekening _zichtRekening = new Zichtrekening(2000, "PXL Digital", "Elfde-Liniestraat 26, 3500 Hasselt");
+        private Zichtrekening _zichtRekening = new Zichtrekening(12000, "PXL Digital", "Elfde-Liniestraat 26, 3500 Hasselt");
         private Spaarrekening _spaarRekening = new Spaarrekening(9500, "PXL Digital", "Elfde-Liniestraat 26, 3500 Hasselt");
 
         public MainWindow()

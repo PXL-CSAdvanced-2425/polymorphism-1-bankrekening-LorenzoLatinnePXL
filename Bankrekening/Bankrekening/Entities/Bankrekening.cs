@@ -8,15 +8,15 @@ namespace Bankrekening.Entities
 {
     abstract class Bankrekening
     {
-        public double saldo;
+        private double _saldo;
 
         public string Adres { get; set; }
-        public double HuidigSaldo { get; set; }
+        public double HuidigSaldo { get { return _saldo; } }
         public string Naam { get; set; }
 
         protected Bankrekening(double opening, string name, string address)
         {
-            HuidigSaldo = opening;
+            _saldo = opening;
             Naam = name;
             Adres = address;
         }
@@ -27,7 +27,7 @@ namespace Bankrekening.Entities
         {
             if (amount < 0)
             {
-                HuidigSaldo += amount;
+                _saldo += amount;
             }
         }
 
@@ -35,7 +35,7 @@ namespace Bankrekening.Entities
         {
             if (amount > 0)
             {
-                HuidigSaldo += amount;
+                _saldo += amount;
             }
         }
 
